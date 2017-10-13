@@ -1,8 +1,6 @@
 package com.gu.gd.workshop
 
-import com.typesafe.scalalogging.LazyLogging
-
-object Lambda extends LazyLogging {
+object Lambda {
 
   def handler(): String = {
     "hello world!"

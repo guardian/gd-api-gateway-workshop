@@ -16,8 +16,7 @@ scalacOptions ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.amazonaws" % "aws-lambda-java-core" % "1.1.0",
-  "com.typesafe.scala-logging" %% "scala-logging" % "3.5.0"
+  "com.amazonaws" % "aws-lambda-java-core" % "1.1.0"
 )
 
 enablePlugins(JavaAppPackaging, RiffRaffArtifact)
