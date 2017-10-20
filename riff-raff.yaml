@@ -1,0 +1,19 @@
+
+stacks: [playground]
+regions: [eu-west-1]
+
+templates:
+  gd-api-gateway-workshop:
+    type: aws-lambda
+    app: gd-api-gateway-workshop
+    contentDirectory: gd-api-gateway-workshop
+    parameters:
+      bucket: gu-jr-microservice-workshop-dist
+      functionNames: [gd-api-gateway-workshop-]
+      fileName: gd-api-gateway-workshop.zip
+      prefixStack: false
+
+deployments:
+  gd-api-gateway-workshop-upload:
+    template: gd-api-gateway-workshop
+    actions: [uploadLambda]
