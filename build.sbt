@@ -1,4 +1,4 @@
-name := "gd-microservice-workshop"
+name := "gd-api-gateway-workshop"
 
 organization := "com.gu"
 
