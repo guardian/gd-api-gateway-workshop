@@ -24,8 +24,8 @@ deployments:
       prependStackToCloudFormationStackName: false
       cloudFormationStackName: gd-api-gateway-workshop
       templatePath: cfn.yaml
-    dependencies: [gd-api-gateway-workshop]
+    dependencies: [gd-api-gateway-workshop-upload]
   gd-api-gateway-workshop-lambda-update:
     template: gd-api-gateway-workshop
     actions: [updateLambda]
-    dependencies: [gd-api-gateway-workshop]
+    dependencies: [gd-api-gateway-workshop-cfn]
